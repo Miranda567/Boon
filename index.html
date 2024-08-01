@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoonGrowth | Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+             .hero {
+            background: #1666c4;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0 0 10px;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+            
+            border-radius: 5px;
+        }
+        .hero .cta-buttons {
+            margin-top: 20px;
+      
+        }
+        .hero .cta-buttons a {
+            background-color: #ffffff;
+            font-weight: 400;
+            color: #1e3765;
+            line-height: 1.5;
+            padding: 8px 20px;
+            margin: 5px;
+            border: 2px solid #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        .video-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+
+    
+        
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1e3765;
+            padding: 5px 10px;
+            color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header .logo {
+            width: 50px;
+            height: 40px;
+            align-items: center;
+            padding:
+            border-radius: 10px;
+        }
+        .header .company-name {
+            flex-grow: 1;
+          
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .toggle-btn {
+            font-size: 34px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: white;
+        }
+        .navbar {
+            display: none;
+            flex-direction: column;
+            background-color: #e6e6fa;
+            padding: 10px 20px;
+            
+        }
+        .navbar a {
+            color: #111;
+            padding: 10px 0;
+            text-decoration: none;
+            font-size: 18px;
+          
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        @media(min-width: 768px) {
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .navbar a {
+                padding: 10px 20px;
+            }
+        }
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1666c4;
+            color: white;
+            padding: 10px 20px;
+            position: relative;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-header a {
+            color: white;
+            text-decoration: none;
+        }
+        .company-name {
+            font-size: 20px;
+            font-weight: 400;
+            
+            flex: 1;
+        }
+        .logo-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .logo {
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .toggle-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #148;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            color: #3d3d3d;
+        }
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+          .containeri {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+        
+            .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .video-card {
+      position: relative;
+      text-align: center;
+    }
+
+    .thumbnail, video {
+      width: 100%;
+      height: auto;
+    }
+
+    .thumbnail {
+      display: block;
+    }
+
+    video {
+      display: none;
+    }
+
+    .play-btn, .pause-btn, .mute-btn, .unmute-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    .mute-btn, .unmute-btn {
+      top: 80%;
+    }
+
+    .play-btn:focus, .pause-btn:focus, .mute-btn:focus, .unmute-btn:focus {
+      outline: none;
+    }
+
+    .pause-btn, .unmute-btn {
+      display: none;
+    }
+
+    .play-btn ion-icon, .pause-btn ion-icon, .mute-btn ion-icon, .unmute-btn ion-icon {
+      font-size: 3rem;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="main-header">
+        <a href="index.html" class="company-name">Boongrowth</a>
+        <a href="index.html" class="logo-container"><img src="https://dl.dropboxusercontent.com/scl/fi/47ftffx5kwy2w10yuwxc0/logo.png?rlkey=0xpar1b3njys1olcz7d7t5dfb&dl=0" alt="Logo" class="logo"></a>
+        <span class="toggle-button" onclick="toggleSidebar()">&#9776;</span>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-button" onclick="toggleSidebar()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About</a>
+        <a href="Investment-list.html"></a>
+        <a href="blog.html">Blog</a>
+        <a href="create-account.html">Create Account</a>
+        <a href="loginst.html">Login</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+
+
+
+
+
+    <section class="hero">
+        <h1>Invest in Your Future with BoonGrowth Capital</h1>
+        <p>Your reliable partner in wealth building and financial growth.</p>
+        <div class="cta-buttons">
+            <a href="create-account.html">Get Started</a>
+            <a href="about-us.html">Learn More</a>
+        </div>
+    </section>
+
+    <div class="title">
+     <h1 style="color:#255dbd">Welcome to BoonGrow<br>    Your Partner in Financial Growth<br> and Prosperity</h1>
+     <p>"BoonGrow Investment: Your gateway to financial empowerment.
+Navigating markets, unlocking opportunities, together we thrive.
+Grow your wealth wisely, with guidance<br> and support at every turn.
+Join BoonGrow<br> today, and let's shape your financial future.
+       
+     </p>
+     <a href="create-account.html" button id="coloredButton">Get Started</a></button>
+     </div>
+     </div>
+     <div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "Luna",
+      "proName": "BINANCE:LUNAUSDT"
+    },
+    {
+      "description": "SOL",
+      "proName": "BINANCE:SOLUSDT"
+    },
+    {
+      "description": "Cardano",
+      "proName": "BINANCE:ADAUSDT"
+    },
+    {
+      "description": "DOGE",
+      "proName": "BINANCE:DOGEUSDT"
+    },
+    {
+      "description": "SHIB",
+      "proName": "BINANCE:SHIBUSDT"
+    },
+    {
+      "description": "BNB",
+      "proName": "BINANCE:BNBUSDT"
+    },
+    {
+      "description": "FANTOM",
+      "proName": "BINANCE:FTMUSDT"
+    },
+    {
+      "description": "MATIC",
+      "proName": "BINANCE:MATICUSDT"
+    },
+    {
+      "description": "NEAR",
+      "proName": "BINANCE:NEARUSDT"
+    },
+    {
+      "description": "AVAX",
+      "proName": "BINANCE:AVAXUSDT"
+    },
+    {
+      "description": "CRO",
+      "proName": "KUCOIN:CROUSDT"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+     
+     <div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+ 
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "BtcUsdt",
+      "proName": "BINANCE:BTCUSDT"
+    },
+    {
+      "description": "Solusdt",
+      "proName": "BINANCE:SOLUSDT"
+    },
+    {
+      "description": "Ltcusdt",
+      "proName": "BINANCE:LTCUSDT"
+    },
+    {
+      "description": "Cardano",
+      "proName": "BINANCE:ADAUSD"
+    },
+    {
+      "description": "Dogecoin",
+      "proName": "BINANCE:DOGEUSDT"
+    },
+    {
+      "description": "Filecoin",
+      "proName": "GEMINI:FILUSD"
+    },
+    {
+      "description": "yearn.finance",
+      "proName": "COINBASE:YFIUSD"
+    },
+    {
+      "description": "EOS",
+      "proName": "BITFINEX:EOSUSD"
+    },
+    {
+      "description": "Avalanche",
+      "proName": "COINBASE:AVAXBTC"
+    },
+    {
+      "description": "Solana",
+      "proName": "CRYPTO:SOLUSD"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "showSymbolLogo": true,
+  "locale": "en"
+}
+  </script>
+</div>
+  
+     <h2>Boon Growth Savings (BGS)
+Earn</h2>
+<p style="text-align:center">Earn more interest than your average savings account – and watch your money grow.</p>
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://dl.dropboxusercontent.com/scl/fi/i769z1znrpiquecie8gv5/image5.jpg?rlkey=ciag212pfz7c6o5lflacccanp&dl=0" alt="Paris" style="width:100%;height:300px; border-radius:8px">
+    </div>
+    <div class="flip-box-back">
+      <img src="https://dl.dropboxusercontent.com/scl/fi/zczrqt4gi6x3gsquctkp9/image.jpg?rlkey=b75yh4e051llaqksy794nnqc7&dl=0" alt="Paris" style="width:100%;height:300px; border-radius:8px">
+    </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+<section class="features">
+        <div class="feature">
+            <i class="fas fa-lock"></i>
+            <h2>Secured Platform</h2>
+            <p>Your investments are safe with our top-notch security measures.</p>
+        </div>
+        
+        <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h2>High Returns</h2>
+            <p> Maximize your profits with our high-yield investment options.</p>
+        </div>
+        
+        <div class="feature">
+            <i class="fas fa-user"></i>
+            <h2>Expert Support</h2>
+          
+            <p>Get professional advice and support whenever you need it</p>
+        </div>
+    </section>
+       
+ <section class="section about" id="about" aria-label="about">
+    <div class="containeri">
+      <h2 class="section-title">Explore More</h2>
+
+      <div class="video-card">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/32croro3mkeddax4j0kv6/Main2.png?rlkey=k7mu7eahydqfu2ttpig4n2q9c&dl=0" alt="Video Thumbnail" class="thumbnail" id="video-thumbnail">
+        <video id="promo-video" width="1170" height="450">
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button class="play-btn" id="play-btn" aria-label="play video">
+          <ion-icon name="play-circle-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <button class="pause-btn" id="pause-btn" aria-label="pause video">
+          <ion-icon name="pause-circle-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <button class="mute-btn" id="mute-btn" aria-label="mute audio">
+          <ion-icon name="volume-mute-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <button class="unmute-btn" id="unmute-btn" aria-label="unmute audio">
+          <ion-icon name="volume-high-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+    
+
+    
+    
+    <div class="investment-plan">
+       <h1 style="text-align:center"> investment-plan</h1>
+       <br>
+    <div class="plan">
+        <h2>Sapphire Investment Plan</h2>
+        <p>Get the most out of your money, largest returns.</p>
+        <p><strong>$1200 - $17,500</strong></p>
+        
+            <p>12% Daily Interests</p>
+            <p>40% Referral Bonus</p>
+            <p>10% Company Commission</p>
+            <p>30 Days Profit Withdrawal (with an option to withdraw after just 2 weeks)</p>
+            <p>2 Years Contract Period</p>
+            <p>24/7 Support</p>
+        
+        <a href="create-account.html" class="btn"><button class="btn btn-primary">Get Sapphire plan now</button></a>
+    </div>
+
+    <div class="plan">
+        <h2>Diamond Investment Plan</h2>
+        <p>Get the most out of your money, largest returns.</p>
+        <p><strong>$1000 - $15,000</strong></p>
+      
+            <p>7% Daily Interests</p>
+            <p>30% Referral Bonus</p>
+            <p>10% Company Commission</p>
+            <p>30 Days Profit Withdrawal (with an option to withdraw after just 2 weeks)</p>
+            <p>2 Years Contract Period</p>
+            <p>24/7 Support</p>
+        
+                <a href="create-account.html" class="btn"><button class="btn btn-primary">Get Sapphire plan now</button></a>
+    </div>
+
+    <div class="plan">
+        <h2>Platinum Investment Plan</h2>
+        <p>Get the most out of your money, largest returns.</p>
+        <p><strong>$750 - $12,000</strong></p>
+        
+            <p>5% Daily Interests</p>
+            <p>20% Referral Bonus</p>
+            <p>10% Company Commission</p>
+            <p>30 Days Profit Withdrawal</p>
+            <p>2 Years Contract Period</p>
+            <p>24/7 Support</p>
+        
+        <a href="create-account.html" class="btn"><button class="btn btn-primary">Get Sapphire plan now</button></a>
+    </div>
+
+    <div class="plan">
+        <h2>Gold Investment Plan</h2>
+        <p>Go for Gold, larger returns.</p>
+        <p><strong>$500 - $10,000</strong></p>
+        
+            <p>5% Daily Interests</p>
+            <p>15% Referral Bonus</p>
+            <p>10% Company Commission</p>
+            <p>30 Days Profit Withdrawal</p>
+            <p>2 Years Contract Period</p>
+            <p>24/7 Support</p>
+        
+        <a href="create-account.html" class="btn"><button class="btn btn-primary">Get Sapphire plan now</button></a>
+    </div>
+
+    <div class="plan">
+        <h2>Silver Investment Plan</h2>
+        <p>Affordable plan, large returns.</p>
+        <p><strong>$250 - $5000</strong></p>
+      
+    <p>5% Daily Interests</p>
+    <p>10% Referral Bonus</p>
+    <p>10% Company Commission</p>
+    <p>30 Days Profit Withdrawal</p>
+    <p>2 Years Contract Period</p>
+    <p>24/7 Support</p>
+
+        <a href="create-account.html" class="btn"><button class="btn btn-primary">Get Sapphire plan now</button></a>
+</div>
+
+<div class="plan">
+    <h2>Basic Investment Plan</h2>
+    <p>Most affordable plan, smaller returns.</p>
+    <p><strong>$50 - $1000</strong></p>
+    
+        <p>5% Daily Interests</p>
+        <p>5% Referral Bonus</p>
+        <p>10% Company Commission</p>
+        <p>30 Days Profit Withdrawal</p>
+        <p>2 Years Contract Period</p>
+        <p>24/7 Support</p>
+    
+                    <a href="create-account.html" class="btn"><button class="btn btn-primary">Get Sapphire plan now</button></a>
+</div>
+
+      <section class="contact" id="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Investment Calculator</h2>
+
+          <p class="section-text">
+
+          </p>
+
+          <div class="contact-wrapper">
+
+            <div class="contact-form">
+
+              <div class="wrapper-flex">
+
+                <div class="input-wrapper">
+                  <label for="name">Select Plan </label>
+
+                     <select id="plan">
+        <option value="gold">Plan 1 (Min $100, Max $1000, 1.5% daily)</option>
+        <option value="silver">Plan 2 (Min $200, Max $2000, 2.0% daily)</option>
+        <option value="diamond">Plan 3 (Min $300, Max $3000, 3.5% daily)</option>
+    </select>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="emai">Amount</label>
+
+                  <input type="Number" name="amount" id="amount" min="0"  placeholder="Enter amount"
+                    class="input-field" >
+                </div>
+                <div class="input-wrapper">
+                  <label for="days">Duration (Days)</label>
+
+                  <input type="number" name="duration" id="days" min="0" placeholder="Enter duration in days" 
+                    class="input-field">
+                </div>
+
+              </div>
+<button onclick="calculateProfit()" class="btn btn-primary">Calculate Profit</button>
+
+    <div class="alert" id="alert" style="display:none;"></div>
+    <div class="result" id="result"></div>
+
+             
+        
+
+
+          </div>
+
+        </div>
+      </section>
+ 
+    
+     <h2 style="Color:#001041; font-size:30px; text-align:center;  ">How it works</h2>
+      <p style="text-align:center; color:#; font-family: Roboto;">Navigating markets, unlocking opportunities, together we thrive</p>
+    </div>
+    
+      <div class="container">
+
+            <i class="fas fa-user-plus"></i>
+                       <h2>Step 1: Sign Up Free</h2>
+            <p>Join our platform for free and gain access to a world of investment opportunities. Start your journey towards financial freedom today!</p>
+
+    
+
+                  <i class="fas fa-money-bill-wave"></i>
+            <h2>Step 2: Deposit/Fund account</h2>
+            <p>Easily deposit funds into your account and start investing in a wide range of assets.</p>
+
+        <i class="fas fa-hand-holding-usd"></i>
+                    <h2>Step 3: Choose a Plan</h2>
+            <p>Select an investment plan that fits your financial goals.</p>
+
+        <i class="fas fa-check-circle"></i>
+         <h2>Step 4: Invest</h2>
+            <p>Make your investment and watch your money grow.</p>
+            
+        <i class="fas fa-clock"></i>
+                        <h2
+                    >Step 5: Monitor</h2>
+            <p>Track your investments and returns through our dashboard.</p>
+            
+            
+                      <i class="fas fa-arrow-down"></i>
+            <h2>Withdrawal Available 24/7</h2>
+            <p>Enjoy the convenience of withdrawing your funds at any time, day or night. Our 24/7 withdrawal service ensures that you have access to your money whenever you need it.</p>
+
+        </div>
+    </section>
+    </div>
+
+      <section class="cta">
+        <h2>Join Snap Meet Today</h2>
+        <p>Sign up now to experience safe, secure, and honest meet-ups. Whether you're looking to make new friends or engage in business transactions, Snap Meet is your trusted partner.</p>
+
+    </section>
+
+        
+        
+<div class="stats-container">
+        <h1>Investment Website Statistics</h1>
+        <div class="stats-grid">
+            <div class="stat">
+                <p>Total Jobs Done</p>
+                <span>150</span>
+            </div>
+            <div class="stat">
+                <p>Active Users</p>
+                <span>1000</span>
+            </div>
+            <div class="stat">
+                <p>Trusted Companies</p>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+        <img src="image1.jpg" alt="Paris" style="width:340px;height:250px">
+        </div>
+<div class="tradingview-widget-container">
+
+  <div class="tradingview-widget-container__widget"></div>
+
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "Luna",
+      "proName": "BINANCE:LUNAUSDT"
+    },
+    {
+      "description": "SOL",
+      "proName": "BINANCE:SOLUSDT"
+    },
+    {
+      "description": "Cardano",
+      "proName": "BINANCE:ADAUSDT"
+    },
+    {
+      "description": "DOGE",
+      "proName": "BINANCE:DOGEUSDT"
+    },
+    {
+      "description": "SHIB",
+      "proName": "BINANCE:SHIBUSDT"
+    },
+    {
+      "description": "BNB",
+      "proName": "BINANCE:BNBUSDT"
+    },
+    {
+      "description": "FANTOM",
+      "proName": "BINANCE:FTMUSDT"
+    },
+    {
+      "description": "MATIC",
+      "proName": "BINANCE:MATICUSDT"
+    },
+    {
+      "description": "NEAR",
+      "proName": "BINANCE:NEARUSDT"
+    },
+    {
+      "description": "AVAX",
+      "proName": "BINANCE:AVAXUSDT"
+    },
+    {
+      "description": "CRO",
+      "proName": "KUCOIN:CROUSDT"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+    <div class="testimonials-container">
+        <h1>Client Testimonials</h1>
+        <div class="testimonial">
+            <p>"I've been using this platform for a year now and I'm extremely satisfied with the returns on my investments. Highly recommended!"</p>
+            <div class="testimonial-author">Smith Soles</div>
+        </div>
+        <div class="testimonial">
+            <p>"This is hands down the best investment website out there. The interface is user-friendly and the customer service is top-notch."</p>
+            <div class="testimonial-author">Jane Williams</div>
+        </div>
+        <div class="testimonial">
+            <p>"I was hesitant at first, but after seeing consistent growth in my portfolio, I'm glad I chose this platform for my investments."</p>
+            <div class="testimonial-author">David Johnson</div>
+        </div>
+        <div class="testimonial">
+            <p>"The team behind this website is dedicated to helping their clients succeed. I've never felt more confident in my investment decisions."</p>
+            <div class="testimonial-author">Emily Brown</div>
+        </div>
+        <div class="testimonial">
+            <p>"I've tried several investment platforms before, but none have come close to the level of service and expertise provided here. Keep up the great work!"</p>
+            <div class="testimonial-author">Michael Tony</div>
+        </div>
+    </div>
+    <!
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <h2>What investment options do you offer?</h2>
+            <p>We offer a range of investment options including stocks, bonds, mutual funds, ETFs, and real estate investment trusts (REITs). Our platform provides access to diverse investment opportunities to suit your financial goals and risk tolerance.</p>
+        </div>
+        <div class="faq">
+            <h2>How can I open an investment account?</h2>
+            <p>Opening an investment account is simple and can be done online through our website. You'll need to provide some personal information, such as your name, contact details, and identification documents. Once your account is approved, you can start investing.</p>
+        </div>
+        <div class="faq">
+          <h2>What are the fees associated with investing?</h2>
+          <p> Our platform charges competitive fees, including transaction fees, management fees for certain investment products, and potentially advisory fees for personalized investment advice. We are transparent about our fee structure, and you can find detailed information on our website.</p>
+        </div>
+        <div class="faq">
+          <h2>How do I manage my investments?</h2>
+          <p>You can manage your investments conveniently through our online platform. You'll have access to real-time market data, portfolio performance reports, and tools to monitor and adjust your investment strategy as needed. Our team is also available to provide guidance and support</p>
+        </div>
+        <div class="faq">
+          <h2>Is my investment protected?</h2>
+          <p>
+            We take the security of your investments seriously. Our platform employs robust security measures, including encryption technology and multi-factor authentication, to safeguard your sensitive information and assets. Additionally, investments may be protected by regulatory schemes such as the Securities Investor Protection Corporation (SIPC) or insurance coverage.
+          </p>
+        </div>
+   
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <form id="contact-form" method="post" action="send_email.php">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="confirmation" style="display: none;">
+        <p>Thank you for contacting us! We will get back to you shortly.</p>
+    </div>
+        </div>
+    </div>
+    </div>
+    
+            
+  
+<footer>
+  <h2>BOONGROWTH CAPITAL</h2>
+  <a href="index.html">HOME</a>
+  <a href="policy-privacy.html"> PRIVATE POLICY</a>
+  <a href="about-us.html">ABOUT</a>
+  <a href="#">TERMS AND CONDITION</a>
+
+  <hr>
+  <h2>HELP AND SUPPORT</h2>
+  <a href="faq.html">FAQ</a>
+  <a href="create-account.html"> REGISTER</a>
+  <a href="contact.html">CONTACT </a>
+  <a href="login.html">LOGIN</a>
+   <h2>Contact Us</h2>
+
+  <p>             <i class="fas fa-envelope" style="color:#fff;"></i><a href="mailto:boongrow6@gmail.com" style="font-size:18px;">Boongrowth.capital.com</a></p>
+  <h2>Social Media</h2>
+  <div class="social-icons" style="margin-left:50px;">
+         <i class="fa fa-facebook-official" style="color:#fff;"></i>
+    <a href="https://www.facebook.com/profile.php?id=61559870982135" target="_blank">Facebook</a>
+
+    
+    </div>
+            
+
+    <!-- Add more social media links as needed -->
+  </div>
+</footer>
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  </main>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "Luna",
+      "proName": "BINANCE:LUNAUSDT"
+    },
+    {
+      "description": "SOL",
+      "proName": "BINANCE:SOLUSDT"
+    },
+    {
+      "description": "Cardano",
+      "proName": "BINANCE:ADAUSDT"
+    },
+    {
+      "description": "DOGE",
+      "proName": "BINANCE:DOGEUSDT"
+    },
+    {
+      "description": "SHIB",
+      "proName": "BINANCE:SHIBUSDT"
+    },
+    {
+      "description": "BNB",
+      "proName": "BINANCE:BNBUSDT"
+    },
+    {
+      "description": "FANTOM",
+      "proName": "BINANCE:FTMUSDT"
+    },
+    {
+      "description": "MATIC",
+      "proName": "BINANCE:MATICUSDT"
+    },
+    {
+      "description": "NEAR",
+      "proName": "BINANCE:NEARUSDT"
+    },
+    {
+      "description": "AVAX",
+      "proName": "BINANCE:AVAXUSDT"
+    },
+    {
+      "description": "CRO",
+      "proName": "KUCOIN:CROUSDT"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<script>
+  function calculateResults() {
+    const principal = parseFloat(document.getElementById('principal').value) || 0;
+    const interestRate = parseFloat(document.getElementById('interest-rate').value) || 0;
+    const timePeriod = parseFloat(document.getElementById('time-period').value) || 0;
+
+    const interest = (principal * interestRate * timePeriod) / 100;
+    const totalReturn = principal + interest;
+
+    const netProfitElement = document.getElementById('net-profit');
+    netProfitElement.textContent = `Net Profit: $${interest.toFixed(2)}`;
+
+    const totalReturnElement = document.getElementById('total-return');
+    totalReturnElement.textContent = `Total Return: $${totalReturn.toFixed(2)}`;
+  }
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navToggler = document.querySelector('[data-nav-toggler]');
+      const navbar = document.querySelector('[data-navbar]');
+      
+      navToggler.addEventListener('click', function () {
+        navbar.dataset.navbarOpen = navbar.dataset.navbarOpen === 'true' ? 'false' : 'true';
+        navToggler.dataset.navToggler = navToggler.dataset.navToggler === 'true' ? 'false' : 'true';
+      });
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+<script>
+    function calculateProfit() {
+        const plan = document.getElementById('plan').value;
+        const amount = parseFloat(document.getElementById('amount').value);
+        const days = parseInt(document.getElementById('days').value);
+
+        let minAmount, maxAmount, dailyRate;
+        switch(plan) {
+            case 'gold':
+                minAmount = 100;
+                maxAmount = 1000;
+                dailyRate = 0.015;
+                break;
+            case 'silver':
+                minAmount = 200;
+                maxAmount = 2000;
+                dailyRate = 0.02;
+                break;
+            case 'diamond':
+                minAmount = 300;
+                maxAmount = 3000;
+                dailyRate = 0.035;
+                break;
+            default:
+                minAmount = 0;
+                maxAmount = 0;
+                dailyRate = 0;
+        }
+        const alertBox = document.getElementById('alert');
+        const resultBox = document.getElementById('result');
+
+        if (amount < minAmount || amount > maxAmount) {
+            alertBox.style.display = 'block';
+            alertBox.innerHTML = `Investment amount must be between $${minAmount} and $${maxAmount}.`;
+            resultBox.innerHTML = '';
+            return;
+        } else {
+            alertBox.style.display = 'none';
+        }
+
+        const profit = amount * dailyRate * days;
+        const totalAmount = amount + profit;
+
+        resultBox.innerHTML = `
+            <p>Investment Amount: $${amount.toFixed(2)}</p>
+            <p>Duration: ${days} days</p>
+            <p>Daily Rate: ${(dailyRate * 100).toFixed(2)}%</p>
+            <p>Total Profit: $${profit.toFixed(2)}</p>
+            <p>Total Amount: $${totalAmount.toFixed(2)}</p>
+        `;
+    }
+</script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const playButton = document.getElementById('play-btn');
+    const pauseButton = document.getElementById('pause-btn');
+    const muteButton = document.getElementById('mute-btn');
+    const unmuteButton = document.getElementById('unmute-btn');
+    const video = document.getElementById('promo-video');
+    const thumbnail = document.getElementById('video-thumbnail');
+
+    playButton.addEventListener('click', () => {
+      thumbnail.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+      playButton.style.display = 'none';
+      pauseButton.style.display = 'none';
+      muteButton.style.display = 'inline';
+    });
+
+    pauseButton.addEventListener('click', () => {
+      video.pause();
+      playButton.style.display = 'inline';
+      pauseButton.style.display = 'none';
+    });
+
+    muteButton.addEventListener('click', () => {
+      video.muted = true;
+      muteButton.style.display = 'none';
+      unmuteButton.style.display = 'inline';
+    });
+
+    unmuteButton.addEventListener('click', () => {
+      video.muted = false;
+      muteButton.style.display = 'inline';
+      unmuteButton.style.display = 'none';
+    });
+
+    video.addEventListener('play', () => {
+      video.addEventListener('click', showControls);
+    });
+
+    function showControls() {
+      playButton.style.display = 'inline';
+      pauseButton.style.display = 'inline';
+      setTimeout(() => {
+        if (!video.paused) {
+          playButton.style.display = 'none';
+          pauseButton.style.display = 'none';
+        }
+      }, 3000); // Adjust this timeout as needed
+    }
+  </script>
+
+        <!-- Add more FAQs as needed -->
+    <script src="buttoned.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

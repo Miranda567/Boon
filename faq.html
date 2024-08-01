@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>www.Boongrowth  - Crypto investment with high stable profit.</title>
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://Boongrowth /">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Boongrowth  - Crypto investment with high stable profit.">
+  <meta property="og:image" content="https://Boongrowth /images/social.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="Boongrowth ">
+  <meta property="twitter:url" content="https://Boongrowth /">
+  <meta name="twitter:title" content="Boongrowth  - Crypto investment with high stable profit.">
+  <meta name="twitter:image" content="https://Boongrowth /images/social.png">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="inwest.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    
+    
+
+
+    </head>
+ 
+
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .header {
+      background-color: #fff;
+      color: #3399ff;
+      padding: 1rem 0;
+
+
+  
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #007;
+      text-decoration: none;
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar-item {
+      margin-left: 2rem;
+    }
+    
+    .navbar-link {
+      color: #111;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    
+    .navbar-link:hover {
+      color: #ddd;
+    }
+    
+    .nav-toggle-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: #007;
+      font-size: 2.0rem;
+    }
+    
+    .nav-toggle-btn .close {
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-toggle-btn {
+        display: block;
+      }
+      
+      .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      
+      .navbar-list {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .navbar-item {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 2rem;
+      
+        border-bottom: 1px solid #444;
+      }
+      
+      .navbar-link {
+        width: 100%;
+        color: #111;
+      }
+      
+      .navbar[data-navbar-open="true"] {
+        max-height: 400px;
+      }
+      
+      .nav-toggle-btn[data-nav-toggler="true"] .open {
+        display: none;
+      }
+      
+      .nav-toggle-btn[data-nav-toggler="true"] .close {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">BoonGrowth</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#benefits" class="navbar-link" data-nav-link>Benefits</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#chapters" class="navbar-link" data-nav-link>Chapters</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#author" class="navbar-link" data-nav-link>Author</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#achievements" class="navbar-link" data-nav-link>Achievements</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navToggler = document.querySelector('[data-nav-toggler]');
+      const navbar = document.querySelector('[data-navbar]');
+      
+      navToggler.addEventListener('click', function () {
+        navbar.dataset.navbarOpen = navbar.dataset.navbarOpen === 'true' ? 'false' : 'true';
+        navToggler.dataset.navToggler = navToggler.dataset.navToggler === 'true' ? 'false' : 'true';
+      });
+    });
+  </script>
+
+  <!-- Include the Ionicons library -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+            <div
+    class="container flex max-w-small-content pb-0 md:pb-0 pt-16 flex-col space-y-8 md:space-y-0">
+    <div class="flex flex-row items-center space-x-2 rtl:space-x-reverse">
+        <a href="/?a=support-desk" class="text-darker-text dark:text-white">Support desk</a>
+        <span class="text-darker-text dark:text-white">
+             <svg class="text-4xl transform-gpu rtl:rotate-180" width="6" height="9" viewBox="0 0 6 9" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M5.16591 4.49997L1.65949 0.994141L0.834656 1.81897L3.51799 4.50231L0.834656 7.18156L1.65949 8.00639L5.16591 4.49997Z"
+        fill="currentColor" />
+</svg>
+ 
+        </span>
+        <span>
+            FAQs
+        </span>
+    </div>
+    <div>
+        <h1 class="mt-4 mb-8 text-2xl font-bold leading-tight md:text-3xl md:leading-tight text-darker-text dark:text-white">
+            FAQs
+        </h1>
+    </div>
+</div>
+ 
+    <div
+    class="container flex max-w-small-content pt-0 md:pt-0 flex-col pb-8 md:pb-16 space-y-8 md:space-y-0">
+    <div class="flex flex-col space-y-2">
+    
+	
+	<p align=justify> <b>What does  www.Boongrowth  do?</b><br>
+  The main activity of www.Boongrowth  company is investing in cryptocurrency on the different exchanges.  <br>
+  <br>
+  <b>WHAT IS THE MINIMUM INVESTMENT? 
+                    ?</b><br>The minimum investment capital in the company is $100 with 2.5% Daily ROI (Return on investment) for 7 days <br>
+  <br>
+  <br>
+  <b>WHAT IS THE MINIMUM WITHDRAWAL?</b><br>
+  The minimum withdrawal with Inwest Ltd is 10$ <br>
+  <br>
+  <b>HOW LONG WILL MY WITHDRAWAL BE SENT? </b><br>
+  Withdrawals in the company are automatically processed once applied.  <br>
+  <br>
+  <b>ARE THERE ANY WITHDRAWAL FEES?  </b><br>
+   There is no hidden fees on Withdrawals. <br>
+  <br>
+  <b>WHAT IS THE REFERENCE COMMISSION? </b><br>
+  We offer 10% on referral commission on anyone that uses your referral link to register and invest. <br>
+  <br>
+  <b>CAN I MAKE A DEPOSIT TO SPONSOR NEW MEMBERS? </b><br>
+  Yes ,by inviting him/her with your referral link. <br>
+  <br>
+  <b>CAN I RECOMMEND MY COMMISSION AND BONUS? </b><br>
+  No, recommending yourself a referral commission is considered cheating and extremely prohibited in our referral program. You will not get any commission or bonus for referring yourself. In addition, we can suspend your accounts.<br>
+  <br>
+  <b> WHAT ARE THE MEANS OF DEPOSIT AND WITHDRAWALS?</b><br>
+  We generally accepts bitcoin, USDT, BNB, Perfect Money, Payeer and Ethereum as a means of deposits and withdrawals.<br>
+  <br>
+  <b>Are my money safe?</b><br>
+  Our site is reliable protected from attacks. It is hosted on a dedicated server and has an SSL certificate. Your money is completely safe. <br>
+  <br>
+  <b>Can I change my personal information?</b><br>
+  You can update your personal data in cases of necessity. <br>
+  <br>
+  <b>What should I do if I forgot the password?</b><br>
+  Click on the link of the automatic password recovery or make a request to the technical support. <br>
+  <br>
+  <b>How can I change my password?</b><br>
+  You can change your password directly from your members area by editing it in 
+  your personal profile. <br>
+  <br>
+  <b>Why do not I get the emails from www.Boongrowth ?</b><br>
+  Check the "Spam" folder in your email client.  <br>
+  <br>
+  <b>How can I make a deposit? </b><br>
+  After registration fill the balance with the chosen payment system with the appropriate sum and confirm the deposit creation.
+  <br>
+  <br>
+  <b>May I open several accounts in your program?</b><br>
+  No. If we find that one member has more than one account, the entire funds will 
+  be frozen. <br>
+  <br>
+  <b>How many deposits can I make?</b><br>
+  We do not set limits on the number of deposits. If you have enough funds on the balance, you can make as many deposits as you like. <br>
+  <br>
+  <b>   What are your limits to the deposit amount?</b><br>
+  Minimum deposit amount is $100, maximum deposit is unlimited. <br>
+  <br>
+</p>
+
+	<!--
+	<a href="/where-is-bitmarkets-licensed-and-headquartered" class="flex flex-row items-center space-x-2 rtl:space-x-reverse">
+     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+    <path
+        d="M18 22.5H6C4.89543 22.5 4 21.6046 4 20.5V4.5C4 3.39543 4.89543 2.5 6 2.5H13C13.0109 2.50047 13.0217 2.50249 13.032 2.506C13.0418 2.50902 13.0518 2.51103 13.062 2.512C13.1502 2.51765 13.2373 2.5348 13.321 2.563L13.349 2.572C13.3717 2.57968 13.3937 2.58904 13.415 2.6C13.5239 2.64842 13.6232 2.71618 13.708 2.8L19.708 8.8C19.7918 8.88479 19.8596 8.98406 19.908 9.093C19.918 9.115 19.925 9.138 19.933 9.161L19.942 9.187C19.9699 9.27039 19.9864 9.35718 19.991 9.445C19.9926 9.45418 19.9949 9.46322 19.998 9.472C19.9998 9.48122 20.0004 9.49062 20.0001 9.5V20.5C20.0001 21.6046 19.1046 22.5 18 22.5ZM6 4.5V20.5H18V10.5H13C12.4477 10.5 12 10.0523 12 9.5V4.5H6ZM14 5.914V8.5H16.586L14 5.914Z"
+        fill="currentColor" />
+</svg>
+ 
+    <span class="text-dark-lighter dark:text-white underline font-normal">Where is BITmarkets licensed and headquartered?</span>
+</a>
+ 
+                         <a href="/is-bitmarkets-account-free" class="flex flex-row items-center space-x-2 rtl:space-x-reverse">
+     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+    <path
+        d="M18 22.5H6C4.89543 22.5 4 21.6046 4 20.5V4.5C4 3.39543 4.89543 2.5 6 2.5H13C13.0109 2.50047 13.0217 2.50249 13.032 2.506C13.0418 2.50902 13.0518 2.51103 13.062 2.512C13.1502 2.51765 13.2373 2.5348 13.321 2.563L13.349 2.572C13.3717 2.57968 13.3937 2.58904 13.415 2.6C13.5239 2.64842 13.6232 2.71618 13.708 2.8L19.708 8.8C19.7918 8.88479 19.8596 8.98406 19.908 9.093C19.918 9.115 19.925 9.138 19.933 9.161L19.942 9.187C19.9699 9.27039 19.9864 9.35718 19.991 9.445C19.9926 9.45418 19.9949 9.46322 19.998 9.472C19.9998 9.48122 20.0004 9.49062 20.0001 9.5V20.5C20.0001 21.6046 19.1046 22.5 18 22.5ZM6 4.5V20.5H18V10.5H13C12.4477 10.5 12 10.0523 12 9.5V4.5H6ZM14 5.914V8.5H16.586L14 5.914Z"
+        fill="currentColor" />
+</svg>
+ 
+    <span class="text-dark-lighter dark:text-white underline font-normal">Is BITmarkets account free?</span>
+</a>
+ 
+                         <a href="/does-bitmarkets-offer-local-support-for-clients" class="flex flex-row items-center space-x-2 rtl:space-x-reverse">
+     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+    <path
+        d="M18 22.5H6C4.89543 22.5 4 21.6046 4 20.5V4.5C4 3.39543 4.89543 2.5 6 2.5H13C13.0109 2.50047 13.0217 2.50249 13.032 2.506C13.0418 2.50902 13.0518 2.51103 13.062 2.512C13.1502 2.51765 13.2373 2.5348 13.321 2.563L13.349 2.572C13.3717 2.57968 13.3937 2.58904 13.415 2.6C13.5239 2.64842 13.6232 2.71618 13.708 2.8L19.708 8.8C19.7918 8.88479 19.8596 8.98406 19.908 9.093C19.918 9.115 19.925 9.138 19.933 9.161L19.942 9.187C19.9699 9.27039 19.9864 9.35718 19.991 9.445C19.9926 9.45418 19.9949 9.46322 19.998 9.472C19.9998 9.48122 20.0004 9.49062 20.0001 9.5V20.5C20.0001 21.6046 19.1046 22.5 18 22.5ZM6 4.5V20.5H18V10.5H13C12.4477 10.5 12 10.0523 12 9.5V4.5H6ZM14 5.914V8.5H16.586L14 5.914Z"
+        fill="currentColor" />
+</svg>
+ 
+    <span class="text-dark-lighter dark:text-white underline font-normal">Does BITmarkets offer local support for clients?</span>
+</a>
+ 
+                         <a href="/how-can-you-reach-our-support-center" class="flex flex-row items-center space-x-2 rtl:space-x-reverse">
+     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+    <path
+        d="M18 22.5H6C4.89543 22.5 4 21.6046 4 20.5V4.5C4 3.39543 4.89543 2.5 6 2.5H13C13.0109 2.50047 13.0217 2.50249 13.032 2.506C13.0418 2.50902 13.0518 2.51103 13.062 2.512C13.1502 2.51765 13.2373 2.5348 13.321 2.563L13.349 2.572C13.3717 2.57968 13.3937 2.58904 13.415 2.6C13.5239 2.64842 13.6232 2.71618 13.708 2.8L19.708 8.8C19.7918 8.88479 19.8596 8.98406 19.908 9.093C19.918 9.115 19.925 9.138 19.933 9.161L19.942 9.187C19.9699 9.27039 19.9864 9.35718 19.991 9.445C19.9926 9.45418 19.9949 9.46322 19.998 9.472C19.9998 9.48122 20.0004 9.49062 20.0001 9.5V20.5C20.0001 21.6046 19.1046 22.5 18 22.5ZM6 4.5V20.5H18V10.5H13C12.4477 10.5 12 10.0523 12 9.5V4.5H6ZM14 5.914V8.5H16.586L14 5.914Z"
+        fill="currentColor" />
+</svg>
+ 
+    <span class="text-dark-lighter dark:text-white underline font-normal">How can you reach our support center?</span>
+</a>
+ 
+                         <a href="/can-i-create-a-company-account" class="flex flex-row items-center space-x-2 rtl:space-x-reverse">
+     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+    <path
+        d="M18 22.5H6C4.89543 22.5 4 21.6046 4 20.5V4.5C4 3.39543 4.89543 2.5 6 2.5H13C13.0109 2.50047 13.0217 2.50249 13.032 2.506C13.0418 2.50902 13.0518 2.51103 13.062 2.512C13.1502 2.51765 13.2373 2.5348 13.321 2.563L13.349 2.572C13.3717 2.57968 13.3937 2.58904 13.415 2.6C13.5239 2.64842 13.6232 2.71618 13.708 2.8L19.708 8.8C19.7918 8.88479 19.8596 8.98406 19.908 9.093C19.918 9.115 19.925 9.138 19.933 9.161L19.942 9.187C19.9699 9.27039 19.9864 9.35718 19.991 9.445C19.9926 9.45418 19.9949 9.46322 19.998 9.472C19.9998 9.48122 20.0004 9.49062 20.0001 9.5V20.5C20.0001 21.6046 19.1046 22.5 18 22.5ZM6 4.5V20.5H18V10.5H13C12.4477 10.5 12 10.0523 12 9.5V4.5H6ZM14 5.914V8.5H16.586L14 5.914Z"
+        fill="currentColor" />
+</svg>
+ 
+    <span class="text-dark-lighter dark:text-white underline font-normal">Can I create a company account?</span>
+</a>
+-->
+</div>
+</div>
+ 
+    <div class="h-1 w-full border-b border-light-border dark:border-dark-border">
+</div>
+    <div
+    class="container flex items-center text-center flex-col py-8 md:py-16 space-y-8 md:space-y-12">
+    <h2 class="text-center text-xl font-bold leading-normal text-darker-text dark:text-white sm:text-2xl">
+        Didn&#039;t find what you were looking for?
+    </h2>
+
+    <p class="styled-links max-w-small-content text-lg text-darker-text dark:text-white">
+        <strong>Hi my name is Boon</strong><br>
+        I’d like to help you with your problems, questions. send me on
+        <a href="mailto:Boongrow6@gmail.com">admin@www.Boongrowth </a>
+    </p>
+</div>
+ 
+    
+     
+	   <div class="rounded-t-[32px] bg-dark pt-8 pb-8 text-light-text dark:bg-black lg:rounded-t-[48px] lg:pt-16 xl:pt-24">
+    <div class="container">
+        <div class="grid grid-cols-2 gap-x-12 gap-y-6 text-sm md:grid-cols-2 md:gap-x-24 md:text-base lg:grid-cols-4">
+    <!--<div class="space-y-6">-->
+    <!--    <div class="space-y-3">-->
+    <!--        <h3 class="text-xl font-bold">Services</h3>-->
+    <!--        <ul class="font-sm space-y-1 text-white">-->
+                
+    <!--            <li><a href="/?a=market">Markets</a></li>-->
+    <!--            <li><a href="/?a=order-book">All-in-one order book</a></li>-->
+    <!--            <li class="hidden h-8 lg:block"></li>-->
+
+                
+    <!--                                <li>-->
+    <!--                    <a-->
+    <!--                        href="/?a=login">Buy TETHER</a>-->
+    <!--                </li>-->
+    <!--                                <li>-->
+    <!--                    <a-->
+    <!--                        href="/?a=login">Buy 1INCH</a>-->
+    <!--                </li>-->
+    <!--                                <li>-->
+    <!--                    <a-->
+    <!--                        href="/?a=login">Buy AAVE</a>-->
+    <!--                </li>-->
+    <!--                                <li>-->
+    <!--                    <a-->
+    <!--                        href="/?a=login">Buy CARDANO</a>-->
+    <!--                </li>-->
+    <!--                                <li>-->
+    <!--                    <a-->
+    <!--                        href="/?a=login">Buy RIPPLE</a>-->
+    <!--                </li>-->
+    <!--                        </ul>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <div class="space-y-6">
+        <div class="space-y-3">
+            <h3 class="text-xl font-bold">Company</h3>
+            <ul class="font-sm space-y-1 text-white">
+                <li><a href="/?a=about-us">About us</a></li>
+                <li><a href="/?a=contact-us">Contact Us</a></li>
+                <li class="hidden h-8 lg:block"></li>
+                <!--<li><a href="/?a=terms-and-conditions">-->
+                <!--        Terms &amp; Conditions-->
+                <!--</a></li>-->
+                <!--<li><a href="/?a=digital-asset-service">-->
+                <!--        Digital Asset Service-->
+                <!--</a></li>-->
+                <!--<li><a href="/?a=privacy-policy">Privacy Policy</a></li>-->
+                <!--<li><a href="/?a=cookie-policy">Cookie policy</a></li>-->
+                <!--<li><a href="/?a=disclaimers">Disclaimers</a></li>-->
+            </ul>
+        </div>
+        <div class="space-y-3">
+            <h3 class="text-xl font-bold">Support</h3>
+            <ul class="font-sm space-y-1 text-white">
+                <li><a href="/?a=support-desk">Help center</a></li>
+                
+                <!--<li><a href="/?a=need-to-know">Need to know</a>-->
+                <!--</li>-->
+                <li><a href="/?a=faq">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="space-y-6">-->
+    <!--    <div class="space-y-3">-->
+    <!--        <h3 class="text-xl font-bold">Academy</h3>-->
+    <!--        <ul class="font-sm space-y-1 text-white">-->
+    <!--            <li><a href="/?a=crypto-for-beginners">Crypto for beginners</a></li>-->
+    <!--            <li><a href="/?a=crypto-for-advanced">Crypto for advanced</a></li>-->
+    <!--                        </ul>-->
+    <!--    </div>-->
+    <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+   
+    <script>
+        let base_url = ' https://www.Boongrowth  ';
+    </script> 
+
+    <script src="/js/manifest.js"></script>
+    <script src="/js/vendor.js"></script>
+    <script src="/js/boostrap.js"></script>
+    <script src="/js/app.js"></script>
+
+        <script src="/js/company.js"></script>
+		
+		
+        <script src="/js/trade.js"></script>
+		
+		<div style="
+position: fixed;
+width: 100%;
+bottom: 0;
+z-index: 100;
+"><div style="height:40px; padding:0px; margin:0px; width: 100%;">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "Luna",
+      "proName": "BINANCE:LUNAUSDT"
+    },
+    {
+      "description": "SOL",
+      "proName": "BINANCE:SOLUSDT"
+    },
+    {
+      "description": "Cardano",
+      "proName": "BINANCE:ADAUSDT"
+    },
+    {
+      "description": "DOGE",
+      "proName": "BINANCE:DOGEUSDT"
+    },
+    {
+      "description": "SHIB",
+      "proName": "BINANCE:SHIBUSDT"
+    },
+    {
+      "description": "BNB",
+      "proName": "BINANCE:BNBUSDT"
+    },
+    {
+      "description": "FANTOM",
+      "proName": "BINANCE:FTMUSDT"
+    },
+    {
+      "description": "MATIC",
+      "proName": "BINANCE:MATICUSDT"
+    },
+    {
+      "description": "NEAR",
+      "proName": "BINANCE:NEARUSDT"
+    },
+    {
+      "description": "AVAX",
+      "proName": "BINANCE:AVAXUSDT"
+    },
+    {
+      "description": "CRO",
+      "proName": "KUCOIN:CROUSDT"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div></div>
+
+<!-- Smartsupp Live Chat script -->
+
+
+
+    </body>
+
+
+</html>
